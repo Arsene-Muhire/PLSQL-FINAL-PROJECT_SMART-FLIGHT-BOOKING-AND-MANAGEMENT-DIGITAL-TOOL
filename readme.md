@@ -1,4 +1,4 @@
-![Tables Creation](https://github.com/user-attachments/assets/418a8963-36a8-43be-97be-2e823a87b03c)<img width="596" height="885" alt="Picture1" src="https://github.com/user-attachments/assets/da1a9762-028a-4ce3-9c5d-8ebca79e608b" /># ✈️ Flight Booking and Management Digital Tool
+# ✈️ Flight Booking and Management Digital Tool
 
 
 **Author:** MURAHIRA MUHIRE Arsene  
@@ -1849,5 +1849,6 @@ PROMPT - Check audit_log table for detailed operation history
 PROMPT
 PROMPT ================================================
 ```
+
 
 
