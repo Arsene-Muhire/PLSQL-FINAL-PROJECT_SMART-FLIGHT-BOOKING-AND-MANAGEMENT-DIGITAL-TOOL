@@ -1,4 +1,4 @@
-![TEST 1 (Create Booking)](https://github.com/user-attachments/assets/7ef5ab7a-a0f9-4cbf-9f39-2a319629ff9e)# ✈️ Flight Booking and Management Digital Tool
+# ✈️ Flight Booking and Management Digital Tool
 
 
 **Author:** MURAHIRA MUHIRE Arsene  
@@ -1023,7 +1023,7 @@ FROM payments;
 SET SERVEROUTPUT ON;
 ```
 
-#### CALL 1: Create Booking
+#### CALLiNG PROCEDURE 1: Create Booking
 
 ```sql
 DECLARE
@@ -1046,7 +1046,7 @@ END;
 
 ![TEST 1 (Create Booking)](https://github.com/user-attachments/assets/6973ffe7-2d26-4eeb-8f90-82fef74763d2)
 
-#### CALL 2: Update Booking Status
+#### CALLING PROCEDURE 2: Update Booking Status
 
 ```sql
 
@@ -1071,7 +1071,7 @@ END;
 
 ![TEST 2 Update Booking Status](https://github.com/user-attachments/assets/c1e5219d-57ec-4a9b-9c0a-6596bbb28cf9)
 
-#### CALL 3: Calculate Revenue Function
+#### CALL FUNCTION 2: Calculate Revenue Function
 
 ```sql
 DECLARE
@@ -1089,7 +1089,7 @@ END;
 
 
   
-#### CALL 4: Validate Email Function
+#### CAL: Validate Email Function
 
 ```sql
 
@@ -1111,7 +1111,7 @@ END;
   ![TEST 4 (Validate Email Function)](https://github.com/user-attachments/assets/7e2f26e6-4453-4b6e-a4cc-409d53248544)
 
   
-#### CALL 5: Get Flight Capacity
+#### CALLING FUNCTION 5: Get Flight Capacity
 ```sql
 DECLARE
     v_capacity NUMBER;
@@ -1127,7 +1127,7 @@ END;
   ![TEST 5 Get Flight Capacity](https://github.com/user-attachments/assets/da53375a-7de7-4abc-96af-8a6dfbb656d6)
 
 
-#### CALL 6: Generate Report (Cursor)
+#### TEST  6: Generate Report (Cursor)
 ```sql
 BEGIN
     DBMS_OUTPUT.PUT_LINE('=== TEST 6: Booking Report ===');
@@ -1857,6 +1857,7 @@ ORDER BY
 
 
 =
+
 
 
 
