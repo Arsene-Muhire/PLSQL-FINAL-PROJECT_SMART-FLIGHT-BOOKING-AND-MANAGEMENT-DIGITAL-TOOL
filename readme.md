@@ -87,8 +87,9 @@ Enables strategic decisions (pricing optimization).
 Provides tactical insights (demand forecasting).
 
 
-![alt text](<PROJECT/PHASE 2/BPMN.jpg>)
-  
+
+  ![BPMN](https://github.com/user-attachments/assets/4b5d41f9-6546-4e97-a6da-d6e6f16b4ad6)
+
 
     
 
@@ -1836,3 +1837,4 @@ PROMPT - Check audit_log table for detailed operation history
 PROMPT
 PROMPT ================================================
 ```
+
