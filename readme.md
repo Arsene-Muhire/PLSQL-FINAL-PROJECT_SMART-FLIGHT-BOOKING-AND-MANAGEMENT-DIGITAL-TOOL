@@ -1,4 +1,4 @@
-# ✈️ Flight Booking and Management Digital Tool
+![TEST 1 (Create Booking)](https://github.com/user-attachments/assets/7ef5ab7a-a0f9-4cbf-9f39-2a319629ff9e)# ✈️ Flight Booking and Management Digital Tool
 
 
 **Author:** MURAHIRA MUHIRE Arsene  
@@ -361,7 +361,8 @@ CREATE TABLE error_log (
 );
 
 ```
-![alt text](<PROJECT/PHASE 6/AUDIT LOG TABLE.jpg>)
+![AUDIT LOG TABLE](https://github.com/user-attachments/assets/506c01b0-ee14-49fc-b894-74f8c38a5902)
+
 
 
 ### PART 2: PACKAGE SPECIFICATION (Public Interface)
@@ -437,8 +438,9 @@ CREATE OR REPLACE PACKAGE flight_booking_pkg AS
 END flight_booking_pkg;
 /
 ```
-![alt text](<PROJECT/PHASE 6/PACKAGE SPECIFICATION (Public Interface.jpg>)
 
+
+![PACKAGE SPECIFICATION (Public Interface](https://github.com/user-attachments/assets/b2bf6fc1-f46b-485f-bfbc-f2c4ff760a62)
 
 ### PART 3: PACKAGE BODY (Implementation)
 ```SQL
@@ -930,8 +932,9 @@ END flight_booking_pkg;
 /
 
 ```
+![PACKAGE BODY (Implementation)](https://github.com/user-attachments/assets/10d5e77c-41c3-4a6f-8763-54ad397a7dbc)
 
-![alt text](<PROJECT/PHASE 6/PACKAGE BODY (Implementation).jpg>)
+
 
 
 ### PART 4: WINDOW FUNCTIONS QUERIES
@@ -955,8 +958,8 @@ GROUP BY p.passenger_id, p.first_name, p.last_name;
 
 ```
 
-![alt text](<PROJECT/PHASE 6/Window Function 1 (Rank passengers by spending).jpg>)
 
+![Window Function 1 (Rank passengers by spending)](https://github.com/user-attachments/assets/44828851-ea28-4885-a24e-cd22cec8b2c7)
 
 ### Window Function 2: Payment trends with LAG/LEAD
 
@@ -973,7 +976,8 @@ SELECT
 FROM payments;
 
 ```
-![alt text](<PROJECT/PHASE 6/Window Function 2  Payment trends with LAG LEAD.jpg>)
+
+![Window Function 2  Payment trends with LAG LEAD](https://github.com/user-attachments/assets/454325c7-437a-4f5f-8287-5109c709d281)
 
 
 ### Window Function 3: Bookings per flight with running total
@@ -993,7 +997,8 @@ GROUP BY f.flight_id, f.flight_number, f.origin, f.destination;
 
 ```
 
-![alt text](<PROJECT/PHASE 6/Window Function 3  (Bookings per flight with running total).jpg>)
+![Window Function 3  (Bookings per flight with running total)](https://github.com/user-attachments/assets/4b7a5231-3023-4cbd-9483-567f8bb19dda)
+
 
 ### Window Function 4: Revenue by payment method with partitioning
 ```sql
@@ -1006,7 +1011,9 @@ SELECT
     ROW_NUMBER() OVER (PARTITION BY payment_method ORDER BY amount DESC) AS rank_in_method
 FROM payments;
 ```
-![alt text](<PROJECT/PHASE 6/Window Function 4 Revenue by payment method with partitioning.jpg>)
+
+
+![Window Function 4 Revenue by payment method with partitioning](https://github.com/user-attachments/assets/92b2eeed-676d-4d58-bd89-1d1fb9ab99a0)
 
 
  #### PART 5: TESTING  AND CALLING  PROCEDURES AND FUNCTION
@@ -1035,7 +1042,9 @@ BEGIN
 END;
 /
 ```
-![alt text](<PROJECT/PHASE 6/TEST 1 (Create Booking).jpg>)
+
+
+![TEST 1 (Create Booking)](https://github.com/user-attachments/assets/6973ffe7-2d26-4eeb-8f90-82fef74763d2)
 
 #### CALL 2: Update Booking Status
 
@@ -1059,7 +1068,8 @@ BEGIN
 END;
 /
 ```
-![alt text](<PROJECT/PHASE 6/TEST 2 Update Booking Status.jpg>)
+
+![TEST 2 Update Booking Status](https://github.com/user-attachments/assets/c1e5219d-57ec-4a9b-9c0a-6596bbb28cf9)
 
 #### CALL 3: Calculate Revenue Function
 
@@ -1075,7 +1085,8 @@ END;
 /
 ```
 
- ![alt text](<PROJECT/PHASE 6/TEST 3 Calculate Revenue Function.jpg>) 
+![TEST 3 Calculate Revenue Function](https://github.com/user-attachments/assets/7c56c24a-2a2b-4625-ac7a-26ce4939a004)
+
 
   
 #### CALL 4: Validate Email Function
@@ -1096,8 +1107,9 @@ BEGIN
 END;
 /
 ```
-![alt text](<PROJECT/PHASE 6/TEST 4 (Validate Email Function).jpg>)
-  
+
+  ![TEST 4 (Validate Email Function)](https://github.com/user-attachments/assets/7e2f26e6-4453-4b6e-a4cc-409d53248544)
+
   
 #### CALL 5: Get Flight Capacity
 ```sql
@@ -1111,8 +1123,9 @@ BEGIN
 END;
 /
 ```
-![alt text](<PROJECT/PHASE 6/TEST 5 Get Flight Capacity.jpg>)
-  
+
+  ![TEST 5 Get Flight Capacity](https://github.com/user-attachments/assets/da53375a-7de7-4abc-96af-8a6dfbb656d6)
+
 
 #### CALL 6: Generate Report (Cursor)
 ```sql
@@ -1122,7 +1135,8 @@ BEGIN
 END;
 /
 ```
-  ![alt text](<PROJECT/PHASE 6/TEST 6 Generate Report (Cursor).jpg>)
+
+![TEST 6 Generate Report (Cursor)](https://github.com/user-attachments/assets/40a4755a-569f-4abc-9a7b-d5088baae2f9)
 
 
 #### CALL 7: Calculate Total Revenue
@@ -1140,7 +1154,8 @@ END;
 /
 
 ```
-![alt text](<PROJECT/PHASE 6/TEST 7 Calculate Total Revenue.jpg>)
+
+![TEST 7 Calculate Total Revenue](https://github.com/user-attachments/assets/5513cbe1-4676-478d-a83a-2da69d05d3d9)
 
 
 #### CALL 8: Get Passenger Name
@@ -1157,7 +1172,8 @@ END;
 /
 ```
 
- ![alt text](<PROJECT/PHASE 6/TEST 8 Get Passenger Name.jpg>)
+
+![TEST 8 Get Passenger Name](https://github.com/user-attachments/assets/1aaafad7-9159-47b8-9b78-d6af5d929a2b)
 
 
 ## PHASE VIII: Advanced Programming & Auditing
@@ -1174,10 +1190,10 @@ CREATE TABLE public_holidays (
 );
 
 ```
+![PUBLIC HOLIDAYS TABLE CREATED](https://github.com/user-attachments/assets/32f4a91c-d5fe-4398-9b4e-0e049f19c10a)
 
-#### Create sequence for holiday_id
 
-CREATE SEQUENCE seq_holiday_id START WITH 1 INCREMENT BY 1;
+#### Inserting  Sample Holidays:
 
 ```sql
 
@@ -1198,7 +1214,7 @@ COMMIT;
 
 ```
 
-![alt text](<PROJECT/PHASE 7/PUBLIC HOLIDAYS TABLE CREATED.jpg>)
+![INSERTION OF PUBLIC HOLIDAYS](https://github.com/user-attachments/assets/5acd84ad-4f9e-466c-8e08-67dcd3bf51e1)
 
 
 #### STEP 2: AUDIT LOG TABLE
@@ -1221,8 +1237,7 @@ CREATE TABLE audit_log (
 
 ```
 
-![alt text](<PROJECT/PHASE 7/AUDIT TABLE CREATED.jpg>)
-
+![AUDIT TABLE CREATED](https://github.com/user-attachments/assets/f6aa55ce-7968-4ef2-82b5-54a89b33e072)
 
 
 
@@ -1258,8 +1273,8 @@ BEGIN
     FROM DUAL;
 ```
 
- ![alt text](<PROJECT/PHASE 7/FUNCTION LOG_AUDIT_ENTRY COMPILED.jpg>)
-     
+
+![FUNCTION LOG_AUDIT_ENTRY COMPILED](https://github.com/user-attachments/assets/d210f0be-da84-4994-a34a-2df7f30bbd16)
 
 
 ##### Generate new audit ID
@@ -1370,7 +1385,7 @@ END check_operation_allowed;
 /
 
 ```
-![alt text](<PROJECT/PHASE 7/FUNCTION CHECK_OPERATION_ALLOWED.jpg>)
+![FUNCTION CHECK_OPERATION_ALLOWED](https://github.com/user-attachments/assets/08293043-2df2-47ec-9732-2e5816032674)
 
 
 #### STEP 5: SIMPLE TRIGGERS FOR EACH TABLE
@@ -1436,9 +1451,10 @@ BEGIN
 END;
 /
 ```
-  ![alt text](<PROJECT/PHASE 7/TRIGGER PASSENGERS_RESTRICT.jpg>)
+ 
 
 
+![TRIGGER PASSENGERS_RESTRICT](https://github.com/user-attachments/assets/78d5473a-27f5-4eee-adbc-2e6fc2007ad7)
 
 
 #####    TRIGGER 2: FLIGHTS TABLE RESTRICTION
@@ -1496,7 +1512,7 @@ BEGIN
 END;
 /
 ```
-  ![alt text](<PROJECT/PHASE 7/TRIGGER FLIGHTS RESTRICT.jpg>)
+![TRIGGER FLIGHTS RESTRICT](https://github.com/user-attachments/assets/d736b008-d317-49d8-b6a6-1e5d202c2b2f)
 
 
  #### TRIGGER 3: BOOKINGS TABLE RESTRICTION
@@ -1550,7 +1566,9 @@ BEGIN
 END;
 /
 ```
-![alt text](<PROJECT/PHASE 7/TRIGGER BOOKING RESTRICT.jpg>)
+
+
+![TRIGGER BOOKING RESTRICT](https://github.com/user-attachments/assets/dd87050c-97e7-4abb-8e0f-87513528808b)
 
 
 
@@ -1656,7 +1674,8 @@ END trg_payments_compound;
 /
 
 ```
-![alt text](<PROJECT/PHASE 7/COMPOUND TRIGGER ON PAYMENTS.jpg>)
+
+![COMPOUND TRIGGER ON PAYMENTS](https://github.com/user-attachments/assets/5643b946-9de4-4f71-93e2-5421548566da)
 
 
 #### TESTING SECTION
@@ -1678,8 +1697,9 @@ SELECT
     SYSDATE AS current_datetime
 FROM DUAL;
 ```
-   ![alt text](<PROJECT/PHASE 7/TEST CURRENT DAY OPERATION.jpg>)
+   
 
+![TEST CURRENT DAY OPERATION](https://github.com/user-attachments/assets/d5fd7db7-88b2-4f32-b634-8bdf98f9086f)
 
 
 #### Test Query 2: Check upcoming holidays
@@ -1697,7 +1717,8 @@ ORDER BY holiday_date;
 
 ```
 
-![alt text](<PROJECT/PHASE 7/CHECKING UPCOMING HOLIDAYS.jpg>)
+![CHECKING UPCOMING HOLIDAYS](https://github.com/user-attachments/assets/e11815aa-8b38-4649-a4a4-2c81d5bfe3a5)
+
 
 #### TEST 1: INSERT ON WEEKDAY (Should be DENIED)
 
@@ -1721,7 +1742,7 @@ END;
 /
 
 ```
-![alt text](<PROJECT/PHASE 7/WEEKDAY NOT ALLOWED.jpg>)
+![WEEKDAY NOT ALLOWED](https://github.com/user-attachments/assets/9a32c5c5-ad19-499b-b1d1-e2f6ffe34ecf)
 
 
 #### TEST 2: UPDATE ON CURRENT DAY
@@ -1744,7 +1765,8 @@ END;
 /
 
 ```
-![alt text](<PROJECT/PHASE 7/UPDATE ALLOWED.jpg>)
+
+![UPDATE ALLOWED](https://github.com/user-attachments/assets/ec913eb6-1149-4fb9-88b9-1d66c2931a81)
 
 
 #### TEST 3: DELETE ON CURRENT DAY
@@ -1765,7 +1787,8 @@ EXCEPTION
 END;
 /
 ```
-![alt text](<PROJECT/PHASE 7/DELETE ALLOWED.jpg>)
+![DELETE ALLOWED](https://github.com/user-attachments/assets/03287470-f95b-44f9-97d7-10987997c5a7)
+
 
 #### AUDIT LOG QUERIES
 
@@ -1788,8 +1811,9 @@ ORDER BY audit_id DESC
 
 FETCH FIRST 10 ROWS ONLY;
 ```
-![alt text](<PROJECT/PHASE 7/AUDIT LOG QUERIES.jpg>)
 
+
+![AUDIT LOG QUERIES](https://github.com/user-attachments/assets/283755da-210c-4501-845f-19320c3d9f8c)
 
 
 #### PROMPT AUDIT LOG: Denied Attempts Summary
@@ -1806,11 +1830,11 @@ FROM audit_log
 GROUP BY table_name, operation_type, attempt_status
 ORDER BY table_name, operation_type;
 
-PROMPT
-PROMPT ============================================================================
-PROMPT AUDIT LOG: Operations by Day of Week
-PROMPT ============================================================================
+```
 
+![AUDIT LOG QUERIES 2](https://github.com/user-attachments/assets/a24e73d6-a860-4627-bcb4-01e91f968f89)
+
+```sql
 SELECT 
     operation_day,
     attempt_status,
@@ -1828,27 +1852,12 @@ ORDER BY
         WHEN 'SATURDAY' THEN 7
     END;
 ```
-![alt text](<PROJECT/PHASE 7/SUMMARY OF OPERATIONS BY DAY OF WEEKS.jpg>)
+
+![SUMMARY OF OPERATIONS BY DAY OF WEEKS](https://github.com/user-attachments/assets/b6a57fc6-55dc-4d5a-a6b8-38a6c4452601)
 
 
+=
 
-Result
-
-```sql
-
-PROMPT
-PROMPT ============================================================================
-PROMPT TEST COMPLETE
-PROMPT ============================================================================
-PROMPT
-PROMPT Summary:
-PROMPT - Triggers created and activated
-PROMPT - Business rules enforced (weekday/holiday restrictions)
-PROMPT - Audit logging functional
-PROMPT - Check audit_log table for detailed operation history
-PROMPT
-PROMPT ================================================
-```
 
 
 
